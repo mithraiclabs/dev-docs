@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: Checkout Dev Docs
         uses: actions/checkout@v2
-        path: dev-docs
+        with:
+          path: dev-docs
 
       - name: Checkout Tokenized Euros
         uses: actions/checkout@v2
