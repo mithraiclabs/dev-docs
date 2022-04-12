@@ -1,0 +1,8 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPointStrategy": "Packages",
+  "entryPoints": ["../euro-primitive/packages/*", "./gitmodules/psyoptions-ts/packages/psy-american"],
+  "readme": "./DOCS_README.md",
+  "name": "PsyOptions Developer Documentation",
+  "out": "docs"
+}

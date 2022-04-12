@@ -1,0 +1,19 @@
+{
+  "name": "dev-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:modules": "git submodule update --remote",
+    "build:deps": "./scripts/install_dependencies.sh",
+    "build:docs": "yarn build:modules && yarn build:deps && yarn typedoc -options ./typedoc.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.3"
+  }
+}

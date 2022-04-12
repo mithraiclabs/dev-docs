@@ -1,0 +1,6 @@
+[submodule "gitmodules/tokenized-euros"]
+	path = gitmodules/tokenized-euros
+	url = https://github.com/mithraiclabs/tokenized-euros.git
+[submodule "gitmodules/psyoptions-ts"]
+	path = gitmodules/psyoptions-ts
+	url = https://github.com/mithraiclabs/psyoptions-ts.git
