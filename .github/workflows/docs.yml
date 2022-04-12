@@ -10,15 +10,6 @@ jobs:
     steps:
       - name: Checkout Dev Docs
         uses: actions/checkout@v3
-        with:
-          path: dev-docs
-
-      - name: Checkout Tokenized Euros
-        uses: actions/checkout@v3
-        with:
-          repository: mithraiclabs/tokenized-euros
-          token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
-          path: tokenized-euros
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
