@@ -10,8 +10,6 @@ jobs:
     steps:
       - name: Checkout Dev Docs
         uses: actions/checkout@v2
-        with:
-          submodules: true
 
       - name: Checkout Tokenized Euros
         uses: actions/checkout@v2
