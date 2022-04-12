@@ -8,11 +8,10 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
-          submodules: true
-          fetch-depth: 0
-          ssh-key: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
+          submodules: recursive
+          token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
