@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: recursive
+          submodules: true
           token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
 
       - name: Deploy
