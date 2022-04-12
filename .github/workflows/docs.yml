@@ -10,13 +10,14 @@ jobs:
     steps:
       - name: Checkout Dev Docs
         uses: actions/checkout@v2
+        path: dev-docs
 
       - name: Checkout Tokenized Euros
         uses: actions/checkout@v2
         with:
           repository: mithraiclabs/tokenized-euros
-          submodules: true
           token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
+          path: tokenized-euros
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
