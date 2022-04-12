@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout Dev Docs
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           path: dev-docs
 
       - name: Checkout Tokenized Euros
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: mithraiclabs/tokenized-euros
           token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
