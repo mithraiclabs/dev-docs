@@ -8,8 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Dev Docs
+        uses: actions/checkout@v2
         with:
+          submodules: true
+
+      - name: Checkout Tokenized Euros
+        uses: actions/checkout@v2
+        with:
+          repository: mithraiclabs/tokenized-euros
           submodules: true
           token: ${{ secrets.TOKENIZED_EUROS_DEPLOY_KEY }}
 
